@@ -1,0 +1,499 @@
+#cover {
+    background: #FFF;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* Loader */
+#starter{
+  margin-top: 15%;
+}
+
+
+#bodyhere{ height: 100%;}
+#bodyhere{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#h1here{
+  color: transparent;
+  font: bold 10em/0 'Bowlby One', cursive;
+  text-align: center;
+  animation: into 4s forwards;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ADBAFF 47%, #50EBC2 49%, #E0FFBA 50%, #E8D39E 50%, #FFBAAD 100%);
+  background-size: 300% 100%;
+  background-position: right;
+  -webkit-background-clip: text;
+}
+#h1here:before,
+#h1here:after{
+  content: '';
+  display: block;
+  background: #ADBAFF;
+  width: 100%;
+  height: 0.07em;
+  animation: into2 4s forwards;
+}
+
+@keyframes into{
+  0%{
+    width: 0;
+  }
+  7%{
+    width: 4.3em;
+    transform: skewY(0deg);
+  }
+  15%{
+    line-height: 0;
+    background-position: right;
+    transform: skewY(-10deg);
+  }
+  25%{
+    width: 4.3em;
+    line-height: 1;
+    transform: skewY(-10deg) translate(0);
+  }
+  85%{
+    width: 4.3em;
+    line-height: 1;
+    transform: skewY(-10deg) translate(0);
+  }
+  90%{
+    line-height: 0;
+    transform: skewY(-10deg) translate(0) scaleX(1);
+  }
+  95%{
+    transform: skewY(-10deg) translate(9em) scaleX(5);
+  }
+  100%{
+    background-position: left;
+    transform: skewY(-10deg) translate(15em) scaleX(1);
+  }
+}
+@keyframes into2{
+  12%{
+    height: 0.07em;
+  }
+  15%{
+    height: 0.15em;
+  }
+  85%{
+    height: 0.15em;
+  }
+  90%{
+    height: 0.07em;
+  }
+}
+@keyframes menu-in{
+  0%{
+    font-size: 0;
+  }
+  30%{
+    font-size: 0;
+  }
+  100%{
+    font-size: 2rem;
+  }
+
+}
+
+
+/* Home Page */
+
+#corner{
+  font-family: 'Staatliches', cursive;
+  margin: 2%;
+  font-size: 300%;
+}
+
+#intro {
+	position: relative;
+	float: left;
+	color: #ADBAFF;
+	font-family: 'Staatliches', cursive;
+	font-size: 4em;
+}
+#intro span{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #fff;
+	width: 100%;
+	border-left: .1em solid transparent;
+	-webkit-animation: typing 3s steps(16) forwards,
+										 cursor 1s infinite;
+	animation: typing 3s steps(16) forwards,
+						 cursor 1s infinite;
+}
+#introWrapper{
+margin-left: 35%;
+text-align: center;
+}
+
+/* Animation */
+@-webkit-keyframes typing{
+	from { width: 100%;}
+	to { width: 0;}
+}
+@-webkit-keyframes cursor{
+	50% { border-color: white;}
+}
+@keyframes typing{
+	from{ width: 100%;}
+	to{ width: 0;}
+}
+@keyframes cursor{
+	50% { border-color: black;}
+}
+
+#break{
+  margin-top: 15%;
+}
+#bigImage{
+  text-align: center;
+}
+
+#ivvs{
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:before{
+  text-decoration: none;
+  color: black;
+}
+
+a:active{
+  text-decoration: none;
+  color: black;
+}
+
+a:after{
+  text-decoration: none;
+  color: black;
+}
+
+#extra{
+margin-left: 2%;
+}
+
+#things{
+  font-family: 'Staatliches', cursive;
+	font-size: 4em;
+  margin-bottom: 5%;
+}
+
+#navItem{
+  font-family: 'Staatliches', cursive;
+  font-size: 70%;
+}
+
+
+/* Art Page */
+
+#titles{
+  font-family: 'Staatliches', cursive;
+  font-size: 300%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;/* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.gallery{
+  width: 100%;
+  height: auto;
+  margin: 2%;
+}
+
+#photoSection{
+  margin: 3%;
+}
+
+
+/* Programming Page */
+
+* {
+  box-sizing: border-box;
+}
+
+#argoOut{
+  margin-left: 5%;
+}
+
+.gallery1{
+  width: 60%;
+  height: auto;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnProg {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.argoOut:after {
+  margin-left: 2%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnProg {
+    width: 100%;
+  }
+}
+
+#miniTitle{
+  font-family: 'Staatliches', cursive;
+  font-size: 150%;
+}
+
+#blurb{
+font-size: 50%;
+font-family: 'Open Sans', sans-serif;
+font-weight: lighter;
+}
+
+#githubCard{
+  margin-top: 5%;
+  text-align: center;
+  margin-bottom: 5%
+}
+
+
+/* Activism */
+
+
+#miniTitle2{
+  font-family: 'Staatliches', cursive;
+  font-size: 70%;
+}
+
+#blurb2{
+font-size: 40%;
+font-family: 'Open Sans', sans-serif;
+font-weight: lighter;
+}
+
+.gallery2{
+  width: 100%;
+  height: auto;
+  margin-top: 20%;
+}
+
+.gallery3{
+  width: 60%;
+  height: auto;
+  margin-top: 20%;
+}
+
+#gemClub{
+  margin: 7%;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnGem {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.gemClub:after {
+  margin-left: 2%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnGem {
+    width: 100%;
+  }
+}
+
+/* Contact */
+#titles2{
+font-family: 'Staatliches', cursive;
+font-size: 150%;
+margin-top: 5%;
+margin-left: 5%;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#conbod{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #FFF;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*- - - - - - C O N T A C T - C A R D S - - - - - */
+
+.card{
+	width: 60%; /* ⬅ Size - Small (width: 200px), Medium (width: 225px), Large (width: 250px) */
+  height: 300%;
+  overflow: hidden;
+	background-color: #FFFFFF;
+
+	border-radius: 15px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	text-align: center;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+	.card:first-of-type{
+		margin-right: 25px;
+	}
+
+	.card:hover{
+		margin-top: -10px;
+	}
+
+.banner{
+	height: 100px;
+	width: 100%;
+	padding-top: 30px;
+	background-color: #FAFAFA;
+	background-size: cover;
+	background-position: center;
+}
+
+	.card:first-of-type .banner{
+		background-image: url("ivvsGallery/8.jpg");
+	}
+
+.avatar{
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	background-size: cover;
+	background-position: center;
+	background-color: #F1F1F1;
+	border-radius: 100%;
+}
+
+	.card:nth-child(1) .avatar{
+		background-image: url("ivvs.jpg");
+	}
+
+#h3Con, #aCon, #icon{
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+	#h3Con{
+		margin-top: 45px;
+		margin-bottom: 5px;
+		font-size: 18px;
+		color: #212121;
+	}
+
+	#aCon{
+		display: block;
+		padding: 5px 0px;
+		font-size: 14px;
+		color: #9E9E9E;
+		text-decoration: none;
+	}
+
+		#aCon:hover{
+			background-color: #FAFAFA;
+			color: inherit;
+		}
+
+#ulCon{
+	margin-top: 10px;
+	padding: 15px 0px;
+	background-color: #FAFAFA;
+}
+
+	#ulCon #aCon{
+		display: inline;
+		margin-right: 10px;
+	}
+
+		#ulCon #aCon:last-of-type{
+			margin-right: 0px;
+		}
+
+			#ulCon #aCon, #icon:hover{
+				transform: scale(1.5);
+			}
+
+
+  #wholeCard{
+    margin-top: 7%;
+    margin-left: 27%;
+  }
+
+
+  /* ABout */
+
+  #info{
+    margin: 5%;
+  }
